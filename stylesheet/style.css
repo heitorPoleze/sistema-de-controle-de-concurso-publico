@@ -6,14 +6,34 @@ header {
     background-color: #37A63E;
 }
 
-.navegacao {
-    padding: 10px 0;
-    width: bold;
+.logo-site {
+    width: 100px;
+    height: 100px;
+    display: inline;
 }
 
-.navegacao p {
+.navegacao {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+nav li {
     display: inline;
-    margin: 0 130px;
+    margin: 0 100px 0 100px;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav {
+    position: absolute;
+    top: 70px;
+    right: 230px;
 }
 
 .banner {
