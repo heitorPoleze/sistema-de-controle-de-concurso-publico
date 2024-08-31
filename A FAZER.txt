@@ -1,0 +1,32 @@
+oi, heitor aqui
+
+a fazer
+
+HTML E CSS:
+    -> header: 
+        -> diminuir um pouquinho (a gosto)
+        -> alinhar os conteudos na mesma linha 
+        -> botar um :hover nos conteudos (participantes, pag incial, desafio)
+        -> botar logo do IFES
+
+    -> conteudo-principal:
+        -> alinhar os 2 quadrados na msm linha
+        -> fazer um :hover pra aumentar um pouquinho as dimensões do quadrado
+        -> um clique no quadrado pra deixar a borda verde
+        -> deixar a logo do ifes de um lado (👌) e a logo do site de outro
+    
+    -> CSS GERAL
+        -> paleta de cores do ifes
+        -> colocar uma fonte legal
+    
+    -> HTML GERAL
+        -> fazer as pag (pra eu poder colocar o js)
+    -> GERAL
+        -> fazer pasta pros HTML
+        ->	Uma página chamativa com um banner elaborado pela equipe contendo o nome do concurso público e uma logo da plataforma, assim como um fundo que remete à temática da página.
+
+JAVASCRIPT
+    -> filtro
+        -> com select de nome e ano de nascimento
+    
+    -> desafio

@@ -16,7 +16,7 @@ header {
     position: relative;
     margin: 0 auto;
     padding: 20px 0;
-}
+    }
 
 nav li {
     display: inline;
@@ -43,9 +43,9 @@ nav {
 .caixa {
     display: inline-block;
     text-align: center;
-    width: 350px;
+    width: 250px;
     margin: 10px 160px;
-    height: 300px;
+    height: 250px;
     background-color: #BF1B28;
 }
 
