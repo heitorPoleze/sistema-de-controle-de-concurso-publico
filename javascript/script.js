@@ -8,15 +8,60 @@ const pontuacao = [831,814,725,1248,1234,1227,1244,723,750,1178,1047,874,1223,11
 
 const aprovado = [];
 
-function listagem (){
+const btFiltro = document.getElementById("btFiltro");
+
+function aprovacao(){
     for(let i = 0; i < pontuacao.length; i++){
         if (pontuacao[i] < 900){
             aprovado.push("Desclassificado(a)");
         }else{
             aprovado.push("Classificado (a)");
         }
-        console.log(
-            `Lista de participantes: Candidato: ${candidados[i]} CPF: ${CPF[i]} Data de Nascimento:  ${nascimento[i]} Pontuação: ${pontuacao[i]} Aprovação: ${aprovado[i]}`
-        )
+    }
+}
+
+function listagem (){
+        aprovacao();
+        for(let i = 0; i < pontuacao.length; i++){
+            console.log(
+                `Lista de participantes: Candidato: ${candidados[i]} CPF: ${CPF[i]} Data de Nascimento:  ${nascimento[i]} Pontuação: ${pontuacao[i]} Aprovação: ${aprovado[i]}`
+            );
+        }
     };
+
+/*function filtroNome(nome){
+    for (let i = 0; i < candidados.length; i++){
+        if(candidados.indexOf(nome)){
+            console.log(`Lista de participantes: Candidato: ${candidados[i]} CPF: ${CPF[i]} Data de Nascimento:  ${nascimento[i]} Pontuação: ${pontuacao[i]} Aprovação: ${aprovado[i]}`);
+        }else{
+            console.log("Não há registros desse participante");
+        }
+    }
+}*/
+
+
+/*Tente desenvolver um relatório que apresente os 10 candidatos com maior pontuação em ordem decrescente.
+
+
+*/
+const vetDecrescente = [...pontuacao];
+const vetDezMaiores = [];
+
+
+function desafio(){
+    for(let i = 0; i < vetDecrescente.length; i++){
+        for(let j = 0; j < vetDecrescente.length; j++){
+            if (vetDecrescente[j] < vetDecrescente[j+1]){
+                let posicao = vetDecrescente[j];
+                vetDecrescente[j] = vetDecrescente[j+1];
+                vetDecrescente[j+1] = posicao;
+            }
+        }
+    }
+    console.log(vetDecrescente)
+    for(let i = 0; i < 10; i++){
+        vetDezMaiores.push(vetDecrescente[i]);
+
+    }
+    console.log(vetDezMaiores);
 }
