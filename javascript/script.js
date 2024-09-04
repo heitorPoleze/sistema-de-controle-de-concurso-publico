@@ -1,6 +1,3 @@
-const vetDecrescente = [...pontuacao];
-const vetDezMaiores = [];
-
 
 const candidados = ['TIRZA TABITA DA SILVA COSTA','SAMELA MIRANDA SIQUEIRA DE SOUZA','LUIZ RICARDO DA SILVA','IVETE PEREIRA DA SILVA LEMOS','PATRICIA HELENA DE SOUZA','NATHALIA FERRAZ SCHIRMER','ALESSANDRO LIMA DOS SANTOS','HELOISA MORAES','AMANDA RAFAELA BARBOSA DE ABREU SILVA','JULIANA LEMOS JOAQUIM','CLAUDIA DOS SANTOS DE CARVALHO','JULIANA SALVAGNO','RENATA MARIA NOGUEIRA SANTOS IVO','BRUNA DE OLIVEIRA GIGLI','JOSEANE CHIARADIA DA SILVA','CINTIA EURIDES DE OLIVEIRA BOTELHO','JOCIMAR ALEX DE ABREU','FELIPE DE ANDRADE FORTES DA SILVA','RAFAELLA MIRELA DOS SANTOS','ADAN ALVES MOREIRA','EDILAINE CRISTINA DE OLIVEIRA DOMICIANO','PAULA GNAN','JULIO DE MATTOS E ALENCASTRE SOARES','DOUGLAS RIBEIRO DA SILVA','CARLOS EDUARDO APARECIDO REZENDE','IVAN LUIS LEONI DE PAULA','ANA CRISTINA DE QUEIROZ','JENIFER CRISTINA DE MATOS','DAMARIS DE FARIA ARAUJO','TAMIRES ROBERTA DA SILVA GONÇALVES DOS SANTOS','MONISE CRISTINA PEREIRA COELHO','LIGIA MARIA FERNANDES RANGEL','ELISA VENANCIO DE OLIVEIRA','RENATA CRISTINA SANTOS OLIVEIRA','SANDRA BASSINI PORTELLA','RAFAEL ALBERTO PAPARELI','MARIA EDUARDA SILVA MERA','LUIS AUGUSTO SEVERINO','MARIA TEREZA OLIVEIRA BATISTA','FLAVIO RICARDO CIRINO','LEONARDO PLAZA LIMA','LARISSA BUENO DE FARIA','ANA PAULA SIQUEIRA DA SILVA','JULIANA BORGES DA SILVA','JOANA APARECIDA FIGUEIRA COELHO','VINICIUS RODRIGUES RIBEIRO','RODRIGO OLIVEIRA MONTEIRO SANTOS','LUCAS FONSECA NEVES','LUCAS MARCELINO PETRONILHO','MICHEL LOURENÇO ALVES NUNES','TAMIRES CAROLINE MADUREIRA','TAYNA VALERIA DA SILVA MOSTARDA','JOAO MARCOS MOREIRA SILVA','THAIS CAROLINA GOMES DE OLIVEIRA','KAROLINE RIBEIRO REI','TATIANE ASCENÇAO DE OLIVEIRA MANARESI','ROSY GONÇALVES PINHEIRO','NATHALIA GADIOLI B. COURI DE OLIVEIRA','CARLOS EDUARDO DA SILVA MOREIRA RAMOS','CAUANE VICENTINI FERREIRA DE MATTOS','ANTONIO CARLOS ANTUNES SANTOS','CLARA ELIZAH DA SILVA CASSIANO','CAMILA APARECIDA BASTOS','WELLINGTON FERNANDES DE LIMA','JESSICA DAYANE MACEDO DE LIMA','GABRIEL RENAN DOS SANTOS','MARIA EDUARDA CRUZ','MARIA MARIANE DE ALMEIDA BORGES','GABRIEL DE SOUZA LEITE','GIOVANNA DOS SANTOS REIS','GABRIEL FRANCISCO TOME','HEMELLY GLEICE GUIMARÃES MALAQUIAS','BRUNNA DE PAULA OLIVEIRA','GLEYCE ANNE DE CASTRO SANTOS','JULIA HERRERA PIMENTEL','NICOLI THAIS DA SILVA','NELLISE BAILON','ISABELLA MENEZES PEDROSO','CARINA DA SILVA BUENO','VALERIA SOUZA DOS SANTOS','JOAO PEDRO ANDREA NUNES','JEAN GREGORIO DA SILVA','LAIS RAMOS DE CAMPOS','THAYNA JASMINI WALTER ANTONIO','LUCAS NUNES DA SILVA','LETICIA DOS SANTOS LOPES','KARINA NATALIA RIBEIRO DE ALMEIDA','MARIA EDUARDA REZENDE BRASIL VIEIRA','REBECA LEMOS QUARESMA DE OLIVEIRA','BRUNO FERNANDO MACHADO','MARIA SILVIA VALERIO FERREIRA','THAIS PEREIRA SANTOS','ALAN MARQUES PEREIRA','DEIVID SERGIO DE SOUZA','VITOR CARDOSO MONTANARO NOCERA','VICTOR HUGO MORGADO SANTOS','DANIELLE CRISTINA MATOS DOS SANTOS','THAIMARA DA SILVA PRADO','DANIELLY MARQUES DANTAS VIEIRA','SARA MIRIA SILVA','ANDERSON DE OLIVEIRA SILVA LEAL'];
 
@@ -32,42 +29,75 @@ function listagem (){
         }
     };
 
-/*function filtroNome(nome){
-    for (let i = 0; i < candidados.length; i++){
-        if(candidados.indexOf(nome)){
-            console.log(`Lista de participantes: Candidato: ${candidados[i]} CPF: ${CPF[i]} Data de Nascimento:  ${nascimento[i]} Pontuação: ${pontuacao[i]} Aprovação: ${aprovado[i]}`);
-        }else{
-            console.log("Não há registros desse participante");
-        }
-    }
-}*/
 
-
-/*Tente desenvolver um relatório que apresente os 10 candidatos com maior pontuação em ordem decrescente.
-
-
-*/
-
-btKaikBeninca.addEventListener("click", function(){
-
-}
-)
+//declarando variáveis para usar na função desafio()
+let vetDecrescente = [...pontuacao];
+let vetCandidadosDecrescente = [...candidados];
+let vetCPFDecrescente = [...CPF];
+let vetNascimentoDecrescente = [...nascimento];
+let vetAprovadoDecrescente = [...aprovado];
+const vetDezMaiores = [];
 
 function desafio(){
+    aprovacao();
+// USANDO FOR DENTRO DE FOR PRA UM PERCORRER O OUTRO VETOR E OUTRO PRA QUE A CADA VEZ QUE PERCORRE UM DADO DO VETOR FAZER A VERIFICACAO(especificada embaixo)
     for(let i = 0; i < vetDecrescente.length; i++){
         for(let j = 0; j < vetDecrescente.length; j++){
+            //VERIFICACAO SE O VETOR PERCORRIDO É MENOR QUE O VETOR SUBSEQUENTE
             if (vetDecrescente[j] < vetDecrescente[j+1]){
+                //SE FOR MAIOR, POSIÇÃO MUDARÁ PRA PRÓXIMA (se era a primeira posição, inverterá com a segunda) e por aí vai até o primeiro for percorrer todo o vetor
                 let posicaoNota = vetDecrescente[j];
                 vetDecrescente[j] = vetDecrescente[j+1];
                 vetDecrescente[j+1] = posicaoNota;
+
+                let posicaoCandidados = vetCandidadosDecrescente[j];
+                vetCandidadosDecrescente[j] =  vetCandidadosDecrescente[j+1];
+                vetCandidadosDecrescente[j+1] = posicaoCandidados;
+
+                let posicaoCPF = vetCPFDecrescente[j];
+                vetCPFDecrescente[j] = vetCPFDecrescente[j+1];
+                vetCPFDecrescente[j+1] = posicaoCPF;
+
+                let posicaoNascimento = vetNascimentoDecrescente[j];
+                vetNascimentoDecrescente[j] = vetNascimentoDecrescente[j+1];
+                vetNascimentoDecrescente[j+1] = posicaoNascimento;
+
+                let posicaoAprovado = vetAprovadoDecrescente[j];
+                vetAprovadoDecrescente[j] = vetAprovadoDecrescente[j+1];
+                vetAprovadoDecrescente[j+1] = posicaoAprovado;
             }
             
         }
-        
     }
-    console.log(vetDecrescente)
+
+    /*for(let i = 0; i < pontuacao.length; i++){
+        for(let j = 0; j < pontuacao.length; j++){
+            if (pontuacao[j] < pontuacao[j+1]){
+                let posicaoNota = vetDecrescente[j];
+                vetDecrescente[j] = vetDecrescente[j+1];
+                vetDecrescente[j+1] = posicaoNota;
+                
+                candidadosDados.push({
+                    nome: candidados[i],
+                    cpf: CPF[i],
+                    nascimento: nascimento[i],
+                    pontuacao: vetDecrescente[i],
+                    aprovado: aprovado[i]
+                });
+            }
+            }
+        }*/
+    //FOR PRA LIMITAR PARA APENAS OS QUE TEM AS 10 MAIORES NOTAS
     for(let i = 0; i < 10; i++){
-        vetDezMaiores.push(vetDecrescente[i]);
+
+        //ARMAZENANDO VARIOS VETORES EM UM SÓ (OBEJETO)
+        vetDezMaiores.push({
+            candidato: vetCandidadosDecrescente[i],
+            cpf: vetCPFDecrescente[i],
+            nascimento: vetNascimentoDecrescente[i],
+            pontuacao:vetDecrescente[i],
+            aprovado: vetAprovadoDecrescente[i]
+        });
 
     }
     console.log(vetDezMaiores);
