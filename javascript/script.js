@@ -31,24 +31,24 @@ function listagem (){
 
 
 //declarando variáveis para usar na função desafio()
-let vetDecrescente = [...pontuacao];
+let vetPontuacaoDecrescente = [...pontuacao];
 let vetCandidadosDecrescente = [...candidados];
 let vetCPFDecrescente = [...CPF];
 let vetNascimentoDecrescente = [...nascimento];
-let vetAprovadoDecrescente = [...aprovado];
-const vetDezMaiores = [];
+let vetAprovadoDecrescente = [];
 
 function desafio(){
     aprovacao();
+    vetAprovadoDecrescente = [...aprovado];
 // USANDO FOR DENTRO DE FOR PRA UM PERCORRER O OUTRO VETOR E OUTRO PRA QUE A CADA VEZ QUE PERCORRE UM DADO DO VETOR FAZER A VERIFICACAO(especificada embaixo)
-    for(let i = 0; i < vetDecrescente.length; i++){
-        for(let j = 0; j < vetDecrescente.length; j++){
+    for(let i = 0; i < vetPontuacaoDecrescente.length; i++){
+        for(let j = 0; j < vetPontuacaoDecrescente.length; j++){
             //VERIFICACAO SE O VETOR PERCORRIDO É MENOR QUE O VETOR SUBSEQUENTE
-            if (vetDecrescente[j] < vetDecrescente[j+1]){
+            if (vetPontuacaoDecrescente[j] < vetPontuacaoDecrescente[j+1]){
                 //SE FOR MAIOR, POSIÇÃO MUDARÁ PRA PRÓXIMA (se era a primeira posição, inverterá com a segunda) e por aí vai até o primeiro for percorrer todo o vetor
-                let posicaoNota = vetDecrescente[j];
-                vetDecrescente[j] = vetDecrescente[j+1];
-                vetDecrescente[j+1] = posicaoNota;
+                let posicaoNota = vetPontuacaoDecrescente[j];
+                vetPontuacaoDecrescente[j] = vetPontuacaoDecrescente[j+1];
+                vetPontuacaoDecrescente[j+1] = posicaoNota;
 
                 let posicaoCandidados = vetCandidadosDecrescente[j];
                 vetCandidadosDecrescente[j] =  vetCandidadosDecrescente[j+1];
@@ -90,15 +90,7 @@ function desafio(){
     //FOR PRA LIMITAR PARA APENAS OS QUE TEM AS 10 MAIORES NOTAS
     for(let i = 0; i < 10; i++){
 
-        //ARMAZENANDO VARIOS VETORES EM UM SÓ (OBEJETO)
-        vetDezMaiores.push({
-            candidato: vetCandidadosDecrescente[i],
-            cpf: vetCPFDecrescente[i],
-            nascimento: vetNascimentoDecrescente[i],
-            pontuacao:vetDecrescente[i],
-            aprovado: vetAprovadoDecrescente[i]
-        });
-
+        console.log(`Candidato: ${vetCandidadosDecrescente[i]} CPF: ${vetCPFDecrescente[i]} Data de Nascimento: ${vetNascimentoDecrescente[i]} Pontuação: ${vetPontuacaoDecrescente[i]} Aprovação: ${vetAprovadoDecrescente[i]}`);
     }
-    console.log(vetDezMaiores);
+
 }

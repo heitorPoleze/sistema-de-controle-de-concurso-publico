@@ -29,4 +29,4 @@ JAVASCRIPT
     -> filtro
         -> com select de nome e ano de nascimento
     
-    -> desafio
+    -> transicionar funções pro html
