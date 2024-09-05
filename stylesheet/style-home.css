@@ -1,10 +1,21 @@
 main {
     background-color: #e5e5e5;
+    padding: 40px 0;
+    box-shadow: 1px 1px 4px 1px black;
+}
+
+.caixa-central {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 10px;
 }
 
 .caixa-banner {
     position: relative;
-    width: 940px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -19,19 +30,29 @@ main {
     display: inline-block;
     text-align: center;
     width: 350px;
-    margin: 10px 160px;
+    margin: 10px 50px;
     height: 100px;
     text-transform: uppercase;
-    background-color: #BF1B28;
+    background-color: #37A63E;
     border-radius: 8px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
 }
 
-.caixa p{
-    display: flex;
-    justify-content: center;
-    
+.caixa p {
+    display: block;
+    font-weight: bold;
     font-size: 20px;
+    padding: 15px 0;
+}
+
+.icone-prova {
+    width: 50px;
+    height: 50px;
+}
+
+.icone-desafio {
+    width: 50px;
+    height: 50px;
 }
 
 .logo-if {
@@ -40,9 +61,10 @@ main {
     height: 180px;
 }
 
-.provisorio {
+.informativo {
     text-justify: justify;
-    width: 940px;
+    width: 900px;
     margin: 0 auto;
-    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 10px;
 }

@@ -16,12 +16,9 @@ header {
 
 .navegacao {
     padding: 20px 0;
-}
-
-nav {
-    position: absolute;
-    top: 10%;
-    right: 23%;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
 nav ul {
@@ -34,18 +31,18 @@ nav li {
 }
 
 nav li:first-child {
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 nav li:last-child {
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 nav a {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: #FFFFFF;
 }
 
 /*--------------------------------------FOOTER--------------------------------------*/
