@@ -1,15 +1,8 @@
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
+/* Estilo da logo */
+.logo-site {
+    width: 150px;
+    display: block;
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 /* Estilo do header */
@@ -22,15 +15,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
 }
 
-.logo-site {
-    width: 150px;
-}
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+nav li {
+    padding: 15px;
+}
+
+.GERAl {
+    text-align: center;
 }
 
 nav ul li {
@@ -47,6 +53,12 @@ nav ul li a:hover {
     color: #166296;
 }
 
+.IFES-back {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Estilo do conteúdo principal */
 .conteudo-principal {
     text-align: center;
@@ -55,33 +67,40 @@ nav ul li a:hover {
 
 #BtDesafio {
     background-color: #e74c3c;
-    color: #fff;
+    color: #FFF;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+    /* Centraliza o botão */
 }
 
 #BtDesafio:hover {
     background-color: #c0392b;
 }
 
-.logo-if {
+.DESAFIO {
     width: 200px;
-    margin-top: 30px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Estilo do footer */
 footer {
-    background-color: #149625;
-    color: #ecf0f1;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+    padding: 10px;
+    background-color: #1d8635;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-footer p {
-    margin: 0;
+.container {
+    background-color: #e5e5e5;
+    height: 100vh;
 }
