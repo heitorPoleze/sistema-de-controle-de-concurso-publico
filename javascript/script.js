@@ -29,6 +29,17 @@ function listagem (){
         }
     };
 
+//Um filtro de “nome”, onde o usuário pode digitar o nome do candidato, atualizando a listagem e exibindo apenas os candidatos que tiverem o conteúdo do filtro em seus nomes
+function filtrarNome(){
+    const filtro = document.getElementById('nomeCandidato').value.toLowerCase();
+    const candidatosFiltrados = [];
+
+    for(let i = 0; i < candidados.length; i++){
+        if(candidados[i].toLowerCase().includes(filtro)){
+            candidatosFiltrados.push(candidados[i]);
+        }
+    }
+}
 
 //declarando variáveis para usar na função desafio()
 let vetDecrescente = [...pontuacao];
