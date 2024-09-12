@@ -44,7 +44,42 @@ nav a {
     color: #FFFFFF;
 }
 
-/*--------------------------------------FOOTER--------------------------------------*/
+nav {
+    position: absolute;
+    top: 70px;
+    right: 230px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.caixa {
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    margin: 10px 160px;
+    height: 250px;
+    background-color: #BF1B28;
+}
+
+.caixa p{
+    font-size: 30px;
+    padding: 135px 0;
+}
+
+.logo-if {
+    display: inline;
+    width: 180px;
+    height: 180px;
+}
+
+.provisorio {
+    text-justify: justify;
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
 
 footer {
     background-color: #37A63E;
