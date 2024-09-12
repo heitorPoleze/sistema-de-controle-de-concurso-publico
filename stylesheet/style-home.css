@@ -36,7 +36,10 @@ main {
     border-radius: 8px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
 }
-
+.caixa a{
+    width: 350px;
+    height: 150px;
+}
 .caixa h3 {
     display: block;
     font-weight: bold;
@@ -46,6 +49,7 @@ main {
 }
 
 .icone-prova {
+    display: inline-block;
     width: 50px;
     height: 50px;
 }
