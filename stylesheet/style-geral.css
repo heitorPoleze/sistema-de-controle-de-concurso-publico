@@ -9,20 +9,19 @@ header {
 }
 
 .logo-site {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     display: inline;
 }
 
-.navegacao {
+.navegacao{
     padding: 20px 0;
     position: relative;
     width: 940px;
     margin: 0 auto;
 }
 
-nav ul {
-    display: inline;
+.navegacao nav {
     text-align: center;
 }
 
