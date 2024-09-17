@@ -1,14 +1,131 @@
-main {
-    background-color: #e5e5e5;
-    padding: 40px 0;
-    box-shadow: 1px 1px 4px 1px black;
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather&family=Pacifico&display=swap');
+
+/* Fonte Display personalizada do dafont.com */
+@font-face {
+    font-family: 'CustomDisplay';
+    src: url('fonts/custom-display.ttf') format('truetype');
 }
 
-.caixa-central {
-    position: relative;
-    background-color: #FFFFFF;
-    width: 940px;
+/* Estilo da logo */
+.logo-site {
+    width: 150px;
+    display: block;
     margin: 0 auto;
-    padding: 0 20px;
-    border-radius: 10px;
+}
+
+/* Estilo do header */
+header {
+    background-color: #1d8635;
+    padding: 20px 0;
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+}
+.OutTitulo{
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 8px;
+
+}
+nav li {
+    padding: 15px;
+}
+
+.GERAl {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #166296;
+}
+
+.IFES-back {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo do conteúdo principal */
+.conteudo-principal {
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#BtDesafio {
+    background-color: #e74c3c;
+    color: #FFF;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+    /* Centraliza o botão */
+}
+
+#BtDesafio:hover {
+    background-color: #c0392b;
+}
+
+.DESAFIO {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo do footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1d8635;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    background-color: #e5e5e5;
+    height: 100vh;
 }
