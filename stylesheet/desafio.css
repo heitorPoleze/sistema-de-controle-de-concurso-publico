@@ -90,7 +90,7 @@ nav ul li a:hover {
     padding: 0;
 }
 
-#BtDesafio {
+#btDesafio {
     background-color: #e74c3c;
     color: #FFF;
     padding: 15px 30px;
@@ -104,7 +104,7 @@ nav ul li a:hover {
     /* Centraliza o botão */
 }
 
-#BtDesafio:hover {
+#btDesafio:hover {
     background-color: #c0392b;
 }
 

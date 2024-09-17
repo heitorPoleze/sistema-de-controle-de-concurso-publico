@@ -44,7 +44,7 @@ let vetNascimentoDecrescente = [...nascimento];
 let vetAprovadoDecrescente = [];
 
 function desafio (){
-    listagem();
+    aprovacao();
     vetAprovadoDecrescente = [...aprovado];
 
 // USANDO FOR DENTRO DE FOR PRA UM PERCORRER O OUTRO VETOR E OUTRO PRA QUE A CADA VEZ QUE PERCORRE UM DADO DO VETOR FAZER A VERIFICACAO(especificada embaixo)
@@ -81,8 +81,7 @@ function desafio (){
        
         let paragrafo = document.createElement('li');
         paragrafo.innerHTML = `Candidato: ${vetCandidadosDecrescente[i]} CPF: ${vetCPFDecrescente[i]} Data de Nascimento: ${vetNascimentoDecrescente[i]} Pontuação: ${vetPontuacaoDecrescente[i]} Aprovação: ${vetAprovadoDecrescente[i]}`;
-        outDezMelhores.appendChild(paragrafo)
-       
+        outDezMelhores.appendChild(paragrafo);
     }
     
 }
@@ -138,5 +137,5 @@ function desafio (){
 
     })
     */
-
-window.onload = desafio();
+btDesafio.addEventListener('click', desafio());
+window.onload = listagem();
