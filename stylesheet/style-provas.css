@@ -1,0 +1,35 @@
+main {
+    background-color: #e5e5e5;
+    padding: 40px 0;
+}
+
+.caixa-central {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 940px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+table {
+    margin: 25px auto;
+}
+
+thead {
+    background-color: #777777;
+    color: white;
+    font: bold;
+}
+
+th, td {
+    width: 180px;
+    border: 1px solid #222222;
+    border-top: none;
+    padding: 3px;
+    vertical-align: middle;
+}
+
+tfoot {
+    background-color: #777777;
+}
