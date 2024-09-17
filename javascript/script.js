@@ -81,7 +81,7 @@ function desafio (){
        
         let paragrafo = document.createElement('li');
         paragrafo.innerHTML = `Candidato: ${vetCandidadosDecrescente[i]} CPF: ${vetCPFDecrescente[i]} Data de Nascimento: ${vetNascimentoDecrescente[i]} Pontuação: ${vetPontuacaoDecrescente[i]} Aprovação: ${vetAprovadoDecrescente[i]}`;
-        outDezMelhores.appendChild(paragrafo)
+         outDezMelhores.appendChild("teste");
        
     }
     
@@ -139,4 +139,4 @@ function desafio (){
     })
     */
 
-window.onload = desafio();
+window.onload = desafio()
