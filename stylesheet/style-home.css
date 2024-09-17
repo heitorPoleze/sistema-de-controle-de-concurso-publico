@@ -30,7 +30,7 @@ main {
     display: inline-block;
     text-align: center;
     width: 350px;
-    margin: 10px 50px;
+    margin: 10px 160px;
     height: 150px;
     background-color: #37A63E;
     border-radius: 8px;
@@ -59,8 +59,9 @@ main {
     height: 50px;
 }
 
-.caixa p {
-    padding: 10px 0;
+.caixa p{
+    font-size: 30px;
+    padding: 135px 0;
 }
 
 .logo-if {
@@ -80,4 +81,56 @@ main {
 a {
     text-decoration: none;
     color: white;
+}
+
+.logo-site {
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+.navegacao {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+nav li {
+    display: inline;
+    margin: 0 100px 0 100px;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav {
+    position: absolute;
+    top: 70px;
+    right: 230px;
+}
+.caixa p{
+    font-size: 30px;
+    padding: 135px 0;
+}
+
+.IFES-Logo.png{
+    display: inline;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+
+footer p {
+    text-align: end;
+    margin: 60px;
+    text-align: center;
+}
+footer {
+    background-color: #149625;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
 }

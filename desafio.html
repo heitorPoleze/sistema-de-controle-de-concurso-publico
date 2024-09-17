@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio</title>
+    <title>Título do Site</title>
     <link rel="stylesheet" href="/stylesheet/reset.css">
-    <link rel="stylesheet" href="/stylesheet/style-geral.css">
-    <link rel="stylesheet" href="/stylesheet/style-desafio.css">
+    <link rel="stylesheet" href="/stylesheet/desafio.css">
 </head>
 <body>
-    <header>
-        <section class="navegacao">
-            <img class="logo-site" src="/imagens/logo-site.png" alt="Logo do Site">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Página Inicial</a></li><!--
-                    --><li><a href="provas.html">Provas</a></li><!--
-                    --><li><a href="desafio.html">Desafio</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-    <main>
-        <div class="caixa-central">
-            <h2>Dez melhores candidatos:</h2>
+    <div class="container">
+        <header>
+            <section class="navegacao">
+                <div>
+                <img class="logo-site" src="/imagens/logo-site.png" alt="Logo do Site">
+                </div>
+                <nav>
+                    <ul class="GERAL">
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="participantes.html">Participantes</a></li>
+                        <li><a href="desafio.html">Desafio</a></li>
+                    </ul>
+                </nav>
+                <div class="ifes-logo"><img class="IFES-back" src="/imagens/logo-st.png"></div>
+            </section>
+        </header>
 
-            <ol id="outDezMelhores"></ol>
-        </div>
-    </main>
-    <footer>
-        <p>Desenvolvido por: Alexandre Maciel Neves, David Oliveira, Heitor Poleze e Kaik Benincá Borchardt</p>
-    </footer>
-    <script src="/javascript/script.js"></script>
+        <main>
+            <section class="conteudo-principal">
+
+
+                <button id="BtDesafio"> Desafio </button>
+
+
+                <img class="DESAFIO" src="/imagens/DESAFIO.png" alt="Logo IFES - Campus Santa Teresa">
+                <h2 id="outTituloPrincipal"></h2>
+
+                <ul id="outDezMelhores"></ul>
+            </section>
+        </main>
+        <footer>
+            <p> &copysr; Desenvolvido por: Alexandre Maciel Neves, David Oliveira, Heitor Poleze e Kaik Benincá Borchardt</p>
+        </footer>
+    </div>
 </body>
+
 </html>
