@@ -9,6 +9,13 @@ const pontuacao = [831,814,725,1248,1234,1227,1244,723,750,1178,1047,874,1223,11
 
 const aprovado = [];
 
+const filtroNome = document.getElementById('nomeCandidato').value.toLowerCase();
+
+const filtroDtNasc = document.getElementById('dtNascCandidato').value;
+
+const tabela = document.getElementById('tabela');
+
+
 //verifica se o candidato está aprovado ou não
 function aprovacao(){
     for(let i = 0; i < pontuacao.length; i++){
@@ -31,19 +38,32 @@ function listagem (){
 
 //Um filtro de “nome”, onde o usuário pode digitar o nome do candidato, atualizando a listagem e exibindo apenas os candidatos que tiverem o conteúdo do filtro em seus nomes
 function filtrarNome(){
-    const filtro = document.getElementById('nomeCandidato').value.toLowerCase();
     const candidatosFiltrados = [];
 
     for(let i = 0; i < candidados.length; i++){
-        if(candidados[i].toLowerCase().includes(filtro)){
+        if(candidados[i].toLowerCase().includes(filtroNome)){
             candidatosFiltrados.push(candidados[i]);
+        }
+    }
+     
+}
+
+function atualizarTabela(candidatosFiltrados){
+    
+}
+//Filtro de data de nascimento, onde o usuário pode digitar uma data de nascimento, atualizando a listagem e exibindo apenas os candidatos que tiverem o conteúdo do filtro na data de nascimento
+function filtrarDtNascimento(){
+    const candidatosFiltrados = [];
+    for(let i = 0; i < nascimento.length; i++){
+        if(nascimento[i].includes(filtroDtNasc)){
+            candidatosFiltrados.push(nascimento[i]);
         }
     }
 }
 
 //declarando variáveis para usar na função desafio()
 let vetDecrescente = [...pontuacao];
-let vetCandidadosDecrescente = [...candidados];
+let vetcandidatosDecrescente = [...candidados];
 let vetCPFDecrescente = [...CPF];
 let vetNascimentoDecrescente = [...nascimento];
 let vetAprovadoDecrescente = [...aprovado];

@@ -18,7 +18,7 @@
                     <li><a href="desafio.html">Desafio</a></li>
                 </ul>
             </nav>
-            <button onclick="desafio()"> AWDLMHJASID)ASOKDJMPADM</button>
+            <button onclick="desafio()"> AWDLMHJASIDASOKDJMPADM</button>
         </section>
     </header>
     <main>
@@ -37,6 +37,14 @@
 
             <img class="logo-if" src="/imagens/logo-st.png" alt="Logo IFES - Campus Santa Teresa">
 
+            <label for="filtro">Escolha um filtro:</label>
+            <select name="filtro" id="filtro">
+                <option value="nome">Filtrar nome do candidato</option>
+                <option value="saab">Filtrar data de nascimento do candidato</option>
+            </select>
+            
+            <input type="text" id="valorFiltro" placeholder="Digite o valor para filtrar">
+            <input type="submit" value="Filtrar" onclick="filtrarCandidatos()">
 
         </section>
        <input type="text" id="nomeCandidato" placeholder="Digite o nome do candidato">
