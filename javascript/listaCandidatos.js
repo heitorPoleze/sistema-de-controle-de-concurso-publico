@@ -1,4 +1,4 @@
-const listaCandidatos = document.getElementById("listaCandidatos");
+const outListaCandidatos = document.getElementById("listaCandidatos");
 
 
 function listagem (){
@@ -8,7 +8,7 @@ function listagem (){
             );*/
             let cadaCandidato = document.createElement('li');
             cadaCandidato.innerHTML = `Candidato: ${candidados[i]} CPF: ${CPF[i]} Data de Nascimento:  ${nascimento[i]} Pontuação: ${pontuacao[i]} Aprovação: ${aprovado[i]}`;
-            listaCandidatos.appendChild(cadaCandidato);
+            outListaCandidatos.appendChild(cadaCandidato);
         }
     };
 
