@@ -5,10 +5,17 @@ main {
 }
 
 .caixa-central {
+    display: flex;
+    justify-content: space-around;
     position: relative;
     background-color: #FFFFFF;
     width: 940px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 20px auto;
+    padding: 5px;
     border-radius: 10px;
 }
+
+#inFiltro{
+    width: 325px;
+}
+
