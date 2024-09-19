@@ -1,17 +1,3 @@
-main {
-    background-color: #e5e5e5;
-    padding: 40px 0;
-}
-
-.caixa-central {
-    position: relative;
-    background-color: #FFFFFF;
-    width: 940px;
-    margin: 0 auto;
-    padding: 5px 20px;
-    border-radius: 10px;
-}
-
 table {
     margin: 25px auto;
 }

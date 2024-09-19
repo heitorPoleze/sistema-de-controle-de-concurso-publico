@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,37 +19,37 @@
                     --><li><a href="desafio.html">Desafio</a></li>
                 </ul>
             </nav>
+            <img class="logo-ifst" src="/imagens/logo-ifst.png" alt="Logo IFES">
         </section>
     </header>
     <main>
         <div class="caixa-central">
             <section class="conteudo-principal">
                 <div class="caixa-banner">
-                    <img class="banner" src="/imagens/banner.jpeg" alt="Banner"><!--Provisório, somente para esboço-->
+                    <img class="banner" src="/imagens/banner.jpeg" alt="Banner">
                 </div>
 
                 <p class="informativo">Nosso site é uma plataforma voltada para o gerenciamento e acompanhamento de processos seletivos de concursos públicos. Nele, candidatos podem encontrar informações detalhadas sobre os concursos em andamento, incluindo a listagem completa de participantes e as notas obtidas em cada etapa.</p>
 
                 <p class="informativo">A plataforma facilita o acesso transparente e organizado aos dados, permitindo que os candidatos acompanhem seu desempenho e a classificação geral no concurso. Com um foco em clareza e eficiência, o site é uma ferramenta essencial tanto para os candidatos quanto para as instituições responsáveis pelos processos seletivos.</p>
 
-                <div class="caixa">
-                    <h3><a href="provas.html">Provas</a></h3>
+                <button class="botao" id="btProvas" onclick="window.location.href = '../provas.html'">
+                    <h3>Provas</h3>
                     <img class="icone-prova" src="/imagens/icone-provas.png">
-                    <p>Veja o edital, acesse o gabarito e confira os resultados dos concursos já ocorridos.</p>
-                </div>
+                    <p>Informações e resultados dos concursos vigentes e finalizados.</p>
+                </button>
 
-                <div class="caixa">
-                    <h3><a href="desafio.html">Desafio</a></h3>
+                <button class="botao" id="btDesafio" onclick="window.location.href = '../desafio.html'">
+                    <h3>Desafio</h3>
                     <img class="icone-desafio" src="/imagens/icone-desafio.png">
-                    <p>Veja o edital, acesse o gabarito e confira os resultados dos concursos já ocorridos.</p>
-                </div>
-
-                <img class="logo-if" src="/imagens/logo-st.png" alt="Logo IFES - Campus Santa Teresa">
+                    <p>Acesse a lista dos candidatos que obtiveram as dez melhores notas.</p>
+                </button>
             </section>
         </div>
     </main>
     <footer>
-        <p>Desenvolvido por: Alexandre Maciel Neves, David Oliveira, Heitor Poleze e Kaik Benincá Borchardt</p>
+        <p> &copysr; Desenvolvido por: Alexandre Maciel Neves, David Oliveira, Heitor Poleze e Kaik Benincá Borchardt</p>
     </footer>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

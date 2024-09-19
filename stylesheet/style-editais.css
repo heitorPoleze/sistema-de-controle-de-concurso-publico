@@ -1,0 +1,24 @@
+body {
+    justify-content: justify;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 25px 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+}
+
+p::first-letter {
+    margin-left: 10px
+}
