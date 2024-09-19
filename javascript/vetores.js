@@ -8,6 +8,13 @@ const pontuacao = [831,814,725,1248,1234,1227,1244,723,750,1178,1047,874,1223,11
 
 const aprovado = [];
 
+const filtroNome = document.getElementById('nomeCandidato').value.toLowerCase();
+
+const filtroDtNasc = document.getElementById('dtNascCandidato').value;
+
+const tabela = document.getElementById('tabela');
+
+
 //verifica se o candidato está aprovado ou não
 function aprovacao(){
     for(let i = 0; i < pontuacao.length; i++){
@@ -17,4 +24,115 @@ function aprovacao(){
             aprovado.push("Classificado (a)");
         }
     }
+<<<<<<< HEAD:javascript/vetores.js
 };
+=======
+}
+
+function listagem (){
+        aprovacao();
+        for(let i = 0; i < pontuacao.length; i++){
+            console.log(
+                `Lista de participantes: Candidato: ${candidados[i]} CPF: ${CPF[i]} Data de Nascimento:  ${nascimento[i]} Pontuação: ${pontuacao[i]} Aprovação: ${aprovado[i]}`
+            );
+        }
+    };
+
+//Um filtro de “nome”, onde o usuário pode digitar o nome do candidato, atualizando a listagem e exibindo apenas os candidatos que tiverem o conteúdo do filtro em seus nomes
+function filtrarNome(){
+    const candidatosFiltrados = [];
+
+    for(let i = 0; i < candidados.length; i++){
+        if(candidados[i].toLowerCase().includes(filtroNome)){
+            candidatosFiltrados.push(candidados[i]);
+        }
+    }
+     
+}
+
+function atualizarTabela(candidatosFiltrados){
+    
+}
+//Filtro de data de nascimento, onde o usuário pode digitar uma data de nascimento, atualizando a listagem e exibindo apenas os candidatos que tiverem o conteúdo do filtro na data de nascimento
+function filtrarDtNascimento(){
+    const candidatosFiltrados = [];
+    for(let i = 0; i < nascimento.length; i++){
+        if(nascimento[i].includes(filtroDtNasc)){
+            candidatosFiltrados.push(nascimento[i]);
+        }
+    }
+}
+
+//declarando variáveis para usar na função desafio()
+let vetDecrescente = [...pontuacao];
+let vetcandidatosDecrescente = [...candidados];
+let vetCPFDecrescente = [...CPF];
+let vetNascimentoDecrescente = [...nascimento];
+let vetAprovadoDecrescente = [...aprovado];
+const vetDezMaiores = [];
+
+function desafio(){
+    aprovacao();
+// USANDO FOR DENTRO DE FOR PRA UM PERCORRER O OUTRO VETOR E OUTRO PRA QUE A CADA VEZ QUE PERCORRE UM DADO DO VETOR FAZER A VERIFICACAO(especificada embaixo)
+    for(let i = 0; i < vetDecrescente.length; i++){
+        for(let j = 0; j < vetDecrescente.length; j++){
+            //VERIFICACAO SE O VETOR PERCORRIDO É MENOR QUE O VETOR SUBSEQUENTE
+            if (vetDecrescente[j] < vetDecrescente[j+1]){
+                //SE FOR MAIOR, POSIÇÃO MUDARÁ PRA PRÓXIMA (se era a primeira posição, inverterá com a segunda) e por aí vai até o primeiro for percorrer todo o vetor
+                let posicaoNota = vetDecrescente[j];
+                vetDecrescente[j] = vetDecrescente[j+1];
+                vetDecrescente[j+1] = posicaoNota;
+
+                let posicaoCandidados = vetCandidadosDecrescente[j];
+                vetCandidadosDecrescente[j] =  vetCandidadosDecrescente[j+1];
+                vetCandidadosDecrescente[j+1] = posicaoCandidados;
+
+                let posicaoCPF = vetCPFDecrescente[j];
+                vetCPFDecrescente[j] = vetCPFDecrescente[j+1];
+                vetCPFDecrescente[j+1] = posicaoCPF;
+
+                let posicaoNascimento = vetNascimentoDecrescente[j];
+                vetNascimentoDecrescente[j] = vetNascimentoDecrescente[j+1];
+                vetNascimentoDecrescente[j+1] = posicaoNascimento;
+
+                let posicaoAprovado = vetAprovadoDecrescente[j];
+                vetAprovadoDecrescente[j] = vetAprovadoDecrescente[j+1];
+                vetAprovadoDecrescente[j+1] = posicaoAprovado;
+            }
+            
+        }
+    }
+
+    /*for(let i = 0; i < pontuacao.length; i++){
+        for(let j = 0; j < pontuacao.length; j++){
+            if (pontuacao[j] < pontuacao[j+1]){
+                let posicaoNota = vetDecrescente[j];
+                vetDecrescente[j] = vetDecrescente[j+1];
+                vetDecrescente[j+1] = posicaoNota;
+                
+                candidadosDados.push({
+                    nome: candidados[i],
+                    cpf: CPF[i],
+                    nascimento: nascimento[i],
+                    pontuacao: vetDecrescente[i],
+                    aprovado: aprovado[i]
+                });
+            }
+            }
+        }*/
+    //FOR PRA LIMITAR PARA APENAS OS QUE TEM AS 10 MAIORES NOTAS
+    for(let i = 0; i < 10; i++){
+
+        //ARMAZENANDO VARIOS VETORES EM UM SÓ (OBEJETO)
+        vetDezMaiores.push({
+            candidato: vetCandidadosDecrescente[i],
+            cpf: vetCPFDecrescente[i],
+            nascimento: vetNascimentoDecrescente[i],
+            pontuacao:vetDecrescente[i],
+            aprovado: vetAprovadoDecrescente[i]
+        });
+
+    }
+    console.log(vetDezMaiores);
+}
+>>>>>>> david:javascript/script.js
