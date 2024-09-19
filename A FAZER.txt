@@ -5,7 +5,6 @@ a fazer
 HTML E CSS:
     -> header: 
         -> diminuir um pouquinho (a gosto)
-        -> alinhar os conteudos na mesma linha 
         -> botar um :hover nos conteudos (participantes, pag incial, desafio)
         -> botar logo do IFES
 
@@ -29,4 +28,4 @@ JAVASCRIPT
     -> filtro
         -> com select de nome e ano de nascimento
     
-    -> desafio
+    -> transicionar funções pro html

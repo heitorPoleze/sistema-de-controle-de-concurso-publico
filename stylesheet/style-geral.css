@@ -2,32 +2,46 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*--------------------------------------HEADER--------------------------------------*/
+
 header {
     background-color: #37A63E;
 }
 
 .logo-site {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     display: inline;
 }
 
-.navegacao {
-    position: relative;
-    margin: 0 auto;
+.navegacao{
     padding: 20px 0;
-    }
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.navegacao nav {
+    text-align: center;
+}
 
 nav li {
     display: inline;
-    margin: 0 100px 0 100px;
+}
+
+nav li:first-child {
+    margin-right: 100px;
+}
+
+nav li:last-child {
+    margin-left: 100px;
 }
 
 nav a {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: #FFFFFF;
 }
 
 nav {
@@ -66,6 +80,7 @@ nav {
     margin: 0 auto;
     text-align: center;
 }
+
 
 footer {
     background-color: #37A63E;
