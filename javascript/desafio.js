@@ -41,16 +41,69 @@ function desafio (){
             }
         }
         };
-    
+        
+       /* let paragrafo = `<thead>
+                            <tr>
+                                <th>Candidato </th>
+                                <th>CPF </th>
+                                <th>Data de Nascimento </th>
+                                <th>Pontuação </th>
+                                <th>Classificação </th>
+                            </tr>
+                         </thead>`*/
          //FOR PRA LIMITAR PARA APENAS OS QUE TEM AS 10 MAIORES NOTAS
+
+        let paragrafo = `
+        <tr>
+            <td> Candidato </td>
+            <td> CPF </td>
+            <td> Data de Nascimento </td>
+            <td> Pontuação </td>
+            <td> Classificação </td>
+        </tr>`
+         
     for(let i = 0; i < 10; i++){
        
-        let paragrafo = document.createElement('li');
-        paragrafo.innerHTML = `Candidato: ${vetCandidadosDecrescente[i]} CPF: ${vetCPFDecrescente[i]} Data de Nascimento: ${vetNascimentoDecrescente[i]} Pontuação: ${vetPontuacaoDecrescente[i]} Aprovação: ${vetAprovadoDecrescente[i]}`;
-        outDezMelhores.appendChild(paragrafo);
+         paragrafo += `<tbody>
+                            <tr>
+                            <td> ${vetCandidadosDecrescente[i]} </td>
+                            <td> ${vetCPFDecrescente[i]} </td>
+                            <td> ${vetNascimentoDecrescente[i]} </td>
+                            <td> ${vetPontuacaoDecrescente[i]} </td>
+                            <td> ${vetAprovadoDecrescente[i]} </td>
+                            </tr>
+                         </tbody>`;
+
+        outDezMelhores.innerHTML = paragrafo;
+
+//AS LINHAS A SEGUIR FUNCIONAM, MAS PREFERI FAZER DO JEITO ACIMA
+/*
+    let tr = document.createElement('tr');
+    
+    let tdCandidato = document.createElement('td');
+    let tdCPF = document.createElement('td');
+    let tdNascimento = document.createElement('td');
+    let tdPontuacao = document.createElement('td');
+    let tdAprovado = document.createElement('td');
+
+    tdCandidato.textContent = vetCandidadosDecrescente[i];
+    tdCPF.textContent = vetCPFDecrescente[i];
+    tdNascimento.textContent = vetNascimentoDecrescente[i];
+    tdPontuacao.textContent = vetPontuacaoDecrescente[i];
+    tdAprovado.textContent = vetAprovadoDecrescente[i];
+
+    tr.appendChild(tdCandidato);
+    tr.appendChild(tdCPF);
+    tr.appendChild(tdNascimento);
+    tr.appendChild(tdPontuacao);
+    tr.appendChild(tdAprovado);
+
+        outDezMelhores.appendChild(tr);
+        */
     }
     
 }
+
 
 /*() => {
     aprovacao();
