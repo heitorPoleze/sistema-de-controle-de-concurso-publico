@@ -117,3 +117,10 @@ footer {
     bottom: 0;
 
 }
+
+.IFES-back {
+    width: 130px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+}
