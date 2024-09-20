@@ -61,7 +61,6 @@ nav {
 
 nav a:hover {
     color: rgba(red, green, blue, alpha 0.6);
-    cursor: pointer;
 }
 
 .banner {
@@ -112,13 +111,41 @@ main {
     border-radius: 10px;
 }
 
+table {
+    margin: 25px auto;
+}
+
+thead {
+    background-color: #777777;
+    color: white;
+    font: bold;
+    font-size: 18px;
+}
+
+th, td {
+    width: 180px;
+    border: 1px solid #222222;
+    border-top: none;
+    padding: 3px;
+    vertical-align: middle;
+    font-size: 15px;
+    
+}
+
+tfoot {
+    background-color: #777777;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
 /*--------------------------------------FOOTER--------------------------------------*/
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     background-color: #1D8635;
     color: #FFFFFF;
     width: 100%;
-    bottom: 0;
 }
