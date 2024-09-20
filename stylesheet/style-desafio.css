@@ -29,7 +29,7 @@ header {
     align-items: center;
     margin: 0 auto;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1500px;
 }
 
 
@@ -105,13 +105,24 @@ footer {
     padding: 10px;
     background-color: #1d8635;
     color: #fff;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
 
+/* Alteração na altura do container */
 .container {
     background-color: #e5e5e5;
-    height: 100vh;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Estilos gerais para preencher a tela inteira */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Fazendo com que o main cresça para empurrar o footer */
+main {
+    flex: 1;
+}
