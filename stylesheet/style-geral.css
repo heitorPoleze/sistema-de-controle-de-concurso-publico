@@ -1,16 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 /*--------------------------------------HEADER--------------------------------------*/
 
 header {
-    background-color: #37A63E;
+    background-color: #1D8635;
 }
 
 .logo-site {
     width: 200px;
-    height: 200px;
+    height: 190px;
+    display: inline;
+}
+
+.logo-ifst {
+    position: absolute;
+    right: 0%;
+    top: 25%;
+    width: 120px;
+    height: 120px;
     display: inline;
 }
 
@@ -19,10 +30,6 @@ header {
     position: relative;
     width: 940px;
     margin: 0 auto;
-}
-
-.navegacao nav {
-    text-align: center;
 }
 
 nav li {
@@ -42,6 +49,95 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     color: #FFFFFF;
+    font-size: 20px;
+}
+
+nav {
+    position: absolute;
+    top: 47%;
+    right: 20%;
+    text-align: center;
+}
+
+nav a:hover {
+    color: rgba(red, green, blue, alpha 0.6);
+}
+
+.banner {
+    width: 100%;
+}
+
+.caixa {
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    margin: 10px 160px;
+    height: 250px;
+    background-color: #BF1B28;
+}
+
+.caixa p{
+    font-size: 30px;
+    padding: 135px 0;
+}
+
+.logo-if {
+    display: inline;
+    width: 180px;
+    height: 180px;
+}
+
+.provisorio {
+    text-justify: justify;
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*--------------------------------------MAIN--------------------------------------*/
+
+main {
+    background-color: #e5e5e5;
+    padding: 40px 0;
+    box-shadow: 1px 1px 4px 1px black;
+}
+
+.caixa-central {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+table {
+    margin: 25px auto;
+}
+
+thead {
+    background-color: #777777;
+    color: white;
+    font: bold;
+    font-size: 18px;
+}
+
+th, td {
+    width: 180px;
+    border: 1px solid #222222;
+    border-top: none;
+    padding: 3px;
+    vertical-align: middle;
+    font-size: 15px;
+    
+}
+
+tfoot {
+    background-color: #777777;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 nav {
@@ -83,7 +179,9 @@ nav {
 
 
 footer {
-    background-color: #37A63E;
-    padding: 15px;
-    font-size: 13px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1D8635;
+    color: #FFFFFF;
+    width: 100%;
 }

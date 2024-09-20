@@ -1,0 +1,62 @@
+body {
+    justify-content: justify;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 23px;
+    margin: 25px 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin: 0 20px;
+}
+
+.subTitulo {
+    font-size: 19px;
+    margin: 20px 0;
+}
+
+.subItens {
+    list-style: upper-roman;
+}
+
+table {
+    margin: 0 -20px;
+    margin-bottom: 20px;
+}
+
+.vagas, .cargaHoraria, .remuneracao {
+    text-align: center;
+}
+
+ul {
+    list-style: disc;
+    margin: 0 40px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h3 {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: -15px;
+}

@@ -1,18 +1,3 @@
-main {
-    background-color: #e5e5e5;
-    padding: 40px 0;
-    box-shadow: 1px 1px 4px 1px black;
-}
-
-.caixa-central {
-    position: relative;
-    background-color: #FFFFFF;
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 20px;
-    border-radius: 10px;
-}
-
 .caixa-banner {
     position: relative;
     width: 900px;
@@ -20,32 +5,40 @@ main {
 }
 
 .banner {
-    margin: 40px 0;
+    margin: 20px 0;
     width: 100%;
     border-radius: 8px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
 }
 
-.caixa {
+.botao {
+    all: unset;
     display: inline-block;
     text-align: center;
     width: 350px;
-    margin: 10px 160px;
-    height: 150px;
-    background-color: #37A63E;
+    margin: 20px 50px;
+    height: 170px;
+    background-color: #1D8635;
     border-radius: 8px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 1);
 }
-.caixa a{
-    width: 350px;
-    height: 150px;
+
+.botao:hover {
+    background-color: #226827;
+    cursor: pointer;
 }
-.caixa h3 {
+
+.botao:active {
+    border: solid 1px #000000;
+}
+
+.botao h3 {
     display: block;
     font-weight: bold;
     font-size: 20px;
     padding: 15px 0;
     text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .icone-prova {
@@ -59,15 +52,10 @@ main {
     height: 50px;
 }
 
-.caixa p{
-    font-size: 30px;
-    padding: 135px 0;
-}
-
-.logo-if {
-    display: inline;
-    width: 180px;
-    height: 180px;
+.botao p {
+    padding: 10px 10px;
+    font-size: 15px;
+    color: #FFFFFF;
 }
 
 .informativo {
