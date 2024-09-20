@@ -1,18 +1,7 @@
-main {
-    background-color: #e5e5e5;
-    padding: 40px 0;
-    box-shadow: 1px 1px 4px 1px black;
-}
-
-.caixa-central {
+#inFiltro {
+    display: inline;
     position: relative;
-    background-color: #FFFFFF;
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 20px;
-    border-radius: 10px;
-}
-
-#inFiltro{
+    left: 39%;
+    padding: 3px 10px;
     width: 325px;
 }
