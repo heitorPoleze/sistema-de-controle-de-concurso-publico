@@ -24,14 +24,18 @@
     </header>
     <main>
         <div class="caixa-central">
-            <p>Filtrar por: <select id="sltFiltro">
+            <p>Filtrar por: 
+                <select id="sltFiltro">
                     <option value="" disabled selected>Escolha o filtro</option>
                     <option value="Nome">Nome</option>
                     <option value="Data de Nascimento">Data de Nascimento</option>
-                </select></p>
+                </select>
+
                 <input type="text" id="inFiltro" placeholder="Digite o nome ou a data de nascimento do participante">
+            </p>            
+
+            <table id="listaCandidatos"></table>
         </div>
-        <table id="listaCandidatos"></table>
     </main>
     <footer>
         <p> &copysr; Desenvolvido por: Alexandre Maciel Neves, David Oliveira, Heitor Poleze e Kaik Benincá Borchardt</p>

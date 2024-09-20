@@ -125,11 +125,10 @@ thead {
 th, td {
     width: 180px;
     border: 1px solid #222222;
-    border-top: none;
     padding: 3px;
     vertical-align: middle;
     font-size: 15px;
-    
+    text-align: center;
 }
 
 tfoot {
@@ -140,43 +139,7 @@ a:hover {
     cursor: pointer;
 }
 
-nav {
-    position: absolute;
-    top: 70px;
-    right: 230px;
-}
-
-.banner {
-    width: 100%;
-}
-
-.caixa {
-    display: inline-block;
-    text-align: center;
-    width: 250px;
-    margin: 10px 160px;
-    height: 250px;
-    background-color: #BF1B28;
-}
-
-.caixa p{
-    font-size: 30px;
-    padding: 135px 0;
-}
-
-.logo-if {
-    display: inline;
-    width: 180px;
-    height: 180px;
-}
-
-.provisorio {
-    text-justify: justify;
-    width: 940px;
-    margin: 0 auto;
-    text-align: center;
-}
-
+/*--------------------------------------FOOTER--------------------------------------*/
 
 footer {
     text-align: center;
