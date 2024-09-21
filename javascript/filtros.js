@@ -1,10 +1,9 @@
-
-const filtro = document.getElementById("inFiltro");
-const selectFiltro = document.getElementById("sltFiltro");
+const inFiltro = document.getElementById("inFiltro");
+const sltFiltro = document.getElementById("sltFiltro");
 const listaCandidatos = document.getElementById("listaCandidatos");
 
-filtro.addEventListener("input", function(){
-    const filtroSelecionado = selectFiltro.value;
+inFiltro.addEventListener("input", function(){
+    const filtroSelecionado = sltFiltro.value;
 
     if(filtroSelecionado === "Nome"){
         filtroNome();

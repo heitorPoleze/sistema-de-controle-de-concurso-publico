@@ -5,3 +5,10 @@
     padding: 3px 10px;
     width: 325px;
 }
+
+li {
+    display: block;
+    list-style: none;
+    font-size: 12px;
+    margin: 10px 0;
+}
